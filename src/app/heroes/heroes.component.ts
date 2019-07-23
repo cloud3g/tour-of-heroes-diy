@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import {Hero} from '../hero';
 import {HeroService} from './hero.service';
 
-//import { HEROES } from '../mock-heroes'; //方式1
+// import { HEROES } from '../mock-heroes'; //方式1
 
 @Component({
   selector: 'app-heroes',
@@ -13,8 +13,8 @@ import {HeroService} from './hero.service';
 
 export class HeroesComponent implements OnInit {
 
-  heroes: Hero[]; //数组
-  //heroes = HEROES; //方式1
+  heroes: Hero[]; // 数组
+  // heroes = HEROES; // 方式1
 
   constructor(private heroService: HeroService) { }
 

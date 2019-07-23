@@ -22,7 +22,7 @@ export class HeroService {
   //   return of(HEROES);
   // }
 
-  //方式三 API
+  // 方式三 API
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)
       .pipe(
@@ -38,7 +38,7 @@ export class HeroService {
       console.error(error); // log to console instead
 
       // TODO: better job of transforming error for user consumption
-      //this.log(`${operation} failed: ${error.message}`);
+      // this.log(`${operation} failed: ${error.message}`);
 
       // Let the app keep running by returning an empty result.
       return of(result as T);
@@ -47,6 +47,6 @@ export class HeroService {
 
   private log(message: string) {
     console.log(message);
-    //this.messageService.add(`HeroService: ${message}`);
+    // this.messageService.add(`HeroService: ${message}`);
   }
 }

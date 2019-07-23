@@ -2,7 +2,7 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { Hero } from './hero';
 import { Injectable } from '@angular/core';
 
-//方式四 在方式三基础上
+// 方式四 在方式三基础上
 @Injectable({
   providedIn: 'root',
 })
